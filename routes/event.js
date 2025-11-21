@@ -1,29 +1,26 @@
 var express = require('express');
 var router = express.Router();
 const EventModel = require('../models/Event-model');
+const { validateEvent } =require('../validation/event-validation');
+const { validationResult } = require('express-validator');
 
 /* GET Event listing. */
 router.get('/', function(req, res, next) {
   res.send('Event says Hi');
 });
 
-router.post('/create-event', async (req, res) => {
+router.post('/create-event', validateEvent, async (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+  }
   try{
     const data = new EventModel(req.body);
-  // let dataObj = {
-  //   title: data.title,
-  //   details: data.details,
-  //   on: data.on,
-  //   venue: data.venue,
-  //   registrationLink: data.registrationLink
-  // };
     await data.save();
     console.log("Event added");
     res.status(201).json({msg: "Created"});
   }catch(error){
-      if(error){
-        res.status(400).json({ message: err.message });
-      }
+      res.status(400).json({ message: error.message });
   }
 })
 
