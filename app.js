@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/ExpressJS', );
+mongoose.connect('mongodb://localhost/ExpessJS', );
 mongoose.connection.on('connected', () => {
   console.log("Connected to MongoDB");
 })

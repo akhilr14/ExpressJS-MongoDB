@@ -4,6 +4,8 @@ const EventModel = require('../models/Event-model');
 const { validateEvent } =require('../validation/event-validation');
 const { validationResult } = require('express-validator');
 
+const logger = require('../logger')
+
 /* GET Event listing. */
 router.get('/', function(req, res, next) {
   res.send('Event says Hi');
@@ -12,15 +14,20 @@ router.get('/', function(req, res, next) {
 router.post('/create-event', validateEvent, async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
+    logger.customLogger.error('error creating data');
+    return res.status(400).json({ errors: errors.array() }); 
   }
   try{
     const data = new EventModel(req.body);
     await data.save();
     console.log("Event added");
+    logger.customLogger.info('success');
     res.status(201).json({msg: "Created"});
+    
   }catch(error){
+      logger.customLogger.error('error creating data');
       res.status(400).json({ message: error.message });
+      
   }
 })
 
