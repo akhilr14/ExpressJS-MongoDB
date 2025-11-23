@@ -2,6 +2,19 @@
   "name": "assignment1",
   "version": "0.0.0",
   "private": true,
+  "description": "EXPRESS JS - MongoDB",
+  "homepage": "https://github.com/akhilr14/ExpressJS-MongoDB#readme",
+  "bugs": {
+    "url": "https://github.com/akhilr14/ExpressJS-MongoDB/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhilr14/ExpressJS-MongoDB.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
   "scripts": {
     "start": "node ./bin/www"
   },

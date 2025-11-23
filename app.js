@@ -10,9 +10,9 @@ mongoose.connection.on('connected', () => {
   console.log("Connected to MongoDB");
 })
 
-const EventModel = require('./models/Event-model');
+const EventModel = require('./Event/model');
 
-const eventRouter = require('./routes/event');
+const eventRouter = require('./Event/routes');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
