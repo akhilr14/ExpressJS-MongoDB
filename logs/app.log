@@ -1,0 +1,26 @@
+{"level":"info","message":"fetched event details by id ","timestamp":"2025-11-24T06:52:21.884Z"}
+{"level":"error","message":"error getting event details by id","timestamp":"2025-11-24T06:52:45.874Z"}
+{"level":"error","message":"error getting event details by id","timestamp":"2025-11-24T06:56:56.936Z"}
+{"level":"info","message":"fetched event details by id ","timestamp":"2025-11-24T06:57:03.765Z"}
+{"level":"info","message":"fetched event details by id | GET /event/event-details/691eaae293faa70fa26dfe48 - 200","timestamp":"2025-11-24T06:57:03.766Z"}
+{"level":"info","message":"fetched event details by id | GET /event/event-details/691eaae293faa70fa26dfe48 - 200","timestamp":"2025-11-24T07:20:18.668Z"}
+{"level":"info","message":"fetched event details by a specified time frame | GET /event/event-window/2024-09-10T11:30:00.000Z/2026-09-10T11:30:00.000Z - 200","timestamp":"2025-11-24T07:20:59.350Z"}
+{"level":"error","message":"error getting event details by a specified time frame | ReferenceError: error is not defined - GET /event/event-window/2024-09-10T11:30:00.000Z/20 - 200","timestamp":"2025-11-24T07:21:35.622Z"}
+{"errors":[{"location":"body","msg":"Invalid value","path":"title","type":"field","value":""}],"level":"error","message":"error validating event data","timestamp":"2025-11-24T07:22:31.189Z"}
+{"level":"error","message":"error creating an event | ReferenceError: error is not defined - POST /event/create-event - 200","timestamp":"2025-11-24T07:22:31.190Z"}
+{"errors":[{"location":"body","msg":"Invalid value","path":"title","type":"field","value":""}],"level":"error","message":"error validating event data","timestamp":"2025-11-24T07:25:21.697Z"}
+{"level":"error","message":"error creating an event | ReferenceError: error is not defined - POST /event/create-event - 200","timestamp":"2025-11-24T07:25:21.701Z"}
+{"errors":[{"location":"body","msg":"Invalid value","path":"title","type":"field","value":""}],"level":"error","message":"error validating event data","timestamp":"2025-11-24T07:27:03.265Z"}
+{"level":"error","message":"Validation error | ReferenceError: error is not defined - POST /event/create-event - 200","timestamp":"2025-11-24T07:27:03.269Z"}
+{"level":"info","message":"created an event | POST /event/create-event - 200","timestamp":"2025-11-24T07:27:39.074Z"}
+{"level":"info","message":"deleted event details by id | DELETE /event/event-delete/692408eb3e0b8cea28c24e47 - 200","timestamp":"2025-11-24T07:28:25.603Z"}
+{"level":"info","message":"fetched all active event data | GET /event/event-active - 200","timestamp":"2025-11-24T07:40:03.114Z"}
+{"level":"info","message":"updated event details by id | PUT /event/event-update/691ea96d93faa70fa26dfe42 - 200","timestamp":"2025-11-24T07:41:19.994Z"}
+{"level":"info","message":"deleted event details by id | DELETE /event/event-delete/691ea96d93faa70fa26dfe42 - 200","timestamp":"2025-11-24T07:42:55.269Z"}
+{"level":"info","message":"updated event details by id | PUT /event/event-update/691eaa5593faa70fa26dfe44 - 200","timestamp":"2025-11-24T07:43:28.598Z"}
+{"level":"error","message":"error validating event details by id | ReferenceError: req is not defined - PUT /event/event-update/691eaa5593faa70fa26dfe44 - 200","timestamp":"2025-11-24T07:47:30.209Z"}
+{"level":"info","message":"deleted event details by id | DELETE /event/event-delete/691eaa5593faa70fa26dfe44 - 200","timestamp":"2025-11-24T07:48:04.136Z"}
+{"level":"info","message":"fetched all active event data | GET /event/event-active - 200","timestamp":"2025-11-24T07:54:34.011Z"}
+{"level":"info","message":"fetched all active event data | GET /event/event-active - 200","timestamp":"2025-11-24T07:55:48.009Z"}
+{"level":"info","message":"fetched all active event data | GET /event/event-active - 200","timestamp":"2025-11-24T07:58:16.799Z"}
+{"level":"info","message":"fetched event details by a specified time frame | GET /event/event-window/2020-12-10T11:30:00.000Z/2028-12-10T11:30:00.000Z - 200","timestamp":"2025-11-24T07:58:56.684Z"}

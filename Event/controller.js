@@ -8,8 +8,8 @@ async function getActiveEvent() {
     return await eventService.getActiveEvent();
 }
 
-async function getEventDetialById(id) {
-    return await eventService.getEventDetialById(id);
+async function getEventDetailById(id) {
+    return await eventService.getEventDetailById(id);
 }
 
 async function getEventDetialWindow(first, last) {
@@ -24,4 +24,4 @@ async function deleteEventById(id) {
     return await eventService.deleteEventById(id);
 }
 
-module.exports = { createEvent, getActiveEvent, getEventDetialById, getEventDetialWindow, updateEventById, deleteEventById }
+module.exports = { createEvent, getActiveEvent, getEventDetailById, getEventDetialWindow, updateEventById, deleteEventById }

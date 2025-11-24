@@ -1,0 +1,10 @@
+[31merror[39m: error getting event details by id
+[31merror[39m: error getting event details by id
+[31merror[39m: error getting event details by a specified time frame | ReferenceError: error is not defined - GET /event/event-window/2024-09-10T11:30:00.000Z/20 - 200
+[31merror[39m: error validating event data {"errors":[{"location":"body","msg":"Invalid value","path":"title","type":"field","value":""}]}
+[31merror[39m: error creating an event | ReferenceError: error is not defined - POST /event/create-event - 200
+[31merror[39m: error validating event data {"errors":[{"location":"body","msg":"Invalid value","path":"title","type":"field","value":""}]}
+[31merror[39m: error creating an event | ReferenceError: error is not defined - POST /event/create-event - 200
+[31merror[39m: error validating event data {"errors":[{"location":"body","msg":"Invalid value","path":"title","type":"field","value":""}]}
+[31merror[39m: Validation error | ReferenceError: error is not defined - POST /event/create-event - 200
+[31merror[39m: error validating event details by id | ReferenceError: req is not defined - PUT /event/event-update/691eaa5593faa70fa26dfe44 - 200
